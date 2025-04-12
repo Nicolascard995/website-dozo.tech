@@ -274,12 +274,12 @@ export default function PortfolioPage() {
               </div>
               <div className="flex items-center">
                 <div className="relative h-12 w-12 mr-4">
-                  <Image
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="Robert Johnson"
-                    fill
-                    className="rounded-full object-cover"
-                  />
+                <Image 
+                src="/placeholder.svg?height=600&width=800" 
+                alt={item.title} 
+                fill 
+                className="object-cover" 
+              />
                 </div>
                 <div>
                   <h4 className="font-semibold">Robert Johnson</h4>

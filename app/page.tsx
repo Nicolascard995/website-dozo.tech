@@ -57,12 +57,12 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-2/5">
               <div className="relative aspect-square w-full max-w-md mx-auto lg:mx-0">
-                <Image
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="Nicolás Cardozo"
-                  fill
-                  className="object-cover rounded-lg shadow-lg"
-                />
+              <Image
+            src="/placeholder.svg?height=600&width=600"
+            alt="Nicolás Cardozo"
+            fill
+            className="object-cover rounded-lg shadow-lg"
+          />
               </div>
             </div>
             <div className="w-full lg:w-3/5 space-y-6">
@@ -441,12 +441,13 @@ export default function Home() {
               </div>
               <div className="flex items-center">
                 <div className="relative h-12 w-12 mr-4">
-                  <Image
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="Michael Chen"
-                    fill
-                    className="rounded-full object-cover"
-                  />
+                <Image
+                  src="/placeholder.svg?height=600&width=800"
+                  alt="Dashboard de visualización de datos"
+                  fill
+                  className="object-cover rounded-lg shadow-lg"
+                  priority
+                />
                 </div>
                 <div>
                   <h4 className="font-semibold">Michael Chen</h4>

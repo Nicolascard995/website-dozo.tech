@@ -1,0 +1,14 @@
+{
+  "node": {
+    "aeca321bc0fef3f9bf190666777e5067a089df7e": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fnicocard95%2Fproyecto%2Fwebsite-dozo.tech%2Factions%2Flead-magnet.ts%22%2C%5B%22submitLeadMagnetForm%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "DPYMrMIS0nNJb4mHw98lXucarvMCUibXhAwpnt3/pO0="
+}

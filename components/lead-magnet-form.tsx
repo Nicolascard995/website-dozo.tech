@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Download, Check, Loader2 } from "lucide-react"
+import { Download, Check, Loader2 } from 'lucide-react'
 import { submitLeadMagnetForm } from "@/actions/lead-magnet"
-import { useActionState } from "react"
+import { useFormState } from "react-dom" // Cambiado de useActionState a useFormState
 
 interface LeadMagnetFormProps {
   title?: string
@@ -26,7 +26,7 @@ export default function LeadMagnetForm({
   description = "Descarga '5 Aplicaciones de IA para Transformar tu Negocio' - nuestra guía completa para implementar IA en tu organización.",
   buttonText = "Descargar Guía",
 }: LeadMagnetFormProps) {
-  const [state, formAction] = useActionState(submitLeadMagnetForm, initialState)
+  const [state, formAction] = useFormState(submitLeadMagnetForm, initialState) // Cambiado a useFormState
   const [isPending, setIsPending] = React.useState(false)
   const formRef = React.useRef<HTMLFormElement>(null)
 

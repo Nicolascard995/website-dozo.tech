@@ -97,12 +97,12 @@ export default function BlogPage() {
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative h-96 md:h-[32rem]">
-              <Image
-                src="/placeholder.svg?height=800&width=1600"
-                alt="Featured blog post"
-                fill
-                className="object-cover"
-              />
+            <Image
+            src="/placeholder.svg?height=800&width=1600"
+            alt="Featured blog post"
+            fill
+            className="object-cover"
+          />
             </div>
             <div className="absolute inset-0 flex items-end">
               <div className="p-6 sm:p-10 max-w-3xl">
