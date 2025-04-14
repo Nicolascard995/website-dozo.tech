@@ -1,1 +1,32 @@
-node_modules
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+.vercel/
+
+# Env files
+.env*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
+
+# Optional: lock files if solo usás uno
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
