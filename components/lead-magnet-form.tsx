@@ -55,7 +55,7 @@ export default function LeadMagnetForm({
               <Check className="h-6 w-6 text-green-600" />
             </div>
             <h3 className="text-xl font-semibold mb-2">¡Gracias!</h3>
-            <p className="text-muted-foreground mb-4">{state.message}</p>
+            <p className="text-neutral-900 mb-4">{state.message}</p>
             <Button variant="outline" size="sm">
               <Download className="mr-2 h-4 w-4" />
               Descargar Ahora
@@ -101,7 +101,7 @@ export default function LeadMagnetForm({
                 </>
               )}
             </Button>
-            <p className="text-xs text-center text-muted-foreground">
+            <p className="text-xs text-center text-neutral-900">
               Al enviar, aceptas nuestra{" "}
               <a href="/privacy-policy" className="underline hover:text-foreground">
                 Política de Privacidad

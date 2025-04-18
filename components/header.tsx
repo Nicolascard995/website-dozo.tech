@@ -65,7 +65,7 @@ export default function Header() {
                           href="/portfolio"
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">Proyectos Destacados</div>
-                          <p className="text-sm leading-tight text-muted-foreground">
+                          <p className="text-sm leading-tight text-neutral-900">
                             Explora soluciones innovadoras que muestran la implementación de ciencia de datos e IA.
                           </p>
                         </a>
@@ -78,7 +78,7 @@ export default function Header() {
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
                           <div className="text-sm font-medium leading-none">Soluciones de IA</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          <p className="line-clamp-2 text-sm leading-snug text-neutral-900">
                             Implementaciones avanzadas de Machine Learning y Deep Learning
                           </p>
                         </Link>
@@ -91,7 +91,7 @@ export default function Header() {
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
                           <div className="text-sm font-medium leading-none">Análisis de Datos</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          <p className="line-clamp-2 text-sm leading-snug text-neutral-900">
                             Inteligencia de negocios e insights basados en datos
                           </p>
                         </Link>
@@ -104,7 +104,7 @@ export default function Header() {
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
                           <div className="text-sm font-medium leading-none">Automatización</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          <p className="line-clamp-2 text-sm leading-snug text-neutral-900">
                             Optimización de flujos de trabajo y automatización de procesos
                           </p>
                         </Link>

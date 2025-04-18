@@ -1,32 +1,26 @@
-# Node modules
+# Dependencias
 node_modules/
 
-# Next.js build output
+# Archivos de compilación de Next.js
 .next/
 out/
-.vercel/
 
-# Env files
-.env*
-!.env.example
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
 
-# Logs
-logs
-*.log
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# System files
+# Archivos del sistema
 .DS_Store
 Thumbs.db
 
-# IDEs and editors
+# Configuraciones de editores
 .vscode/
 .idea/
-*.swp
-
-# Test coverage
-coverage/
-
-# Optional: lock files if solo usás uno
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml

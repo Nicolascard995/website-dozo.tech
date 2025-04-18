@@ -10,8 +10,8 @@ export default function ServicesPage() {
       <section className="py-20 md:py-28 bg-gradient-to-b from-zinc-50 to-white">
         <div className="container px-4 sm:px-8 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Data Science & AI Services</h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">Data Science & AI Services</h1>
+            <p className="text-xl text-neutral-900 mb-8">
               We offer a comprehensive range of data science and AI services to help businesses harness the power of
               their data and achieve their strategic objectives.
             </p>
@@ -260,11 +260,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 bg-zinc-50">
+      <section className="py-20 bg-neutral-100">
         <div className="container px-4 sm:px-8 mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Methodology</h2>
-            <p className="text-xl text-muted-foreground">
+            <h2 className="text-3xl md:font-heading text-4xl font-bold mb-4">Our Methodology</h2>
+            <p className="text-xl text-neutral-900">
               We follow a proven methodology to ensure successful delivery of data science and AI projects.
             </p>
           </div>
@@ -276,7 +276,7 @@ export default function ServicesPage() {
                 <span className="text-lg font-bold text-primary">1</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Discovery</h3>
-              <p className="text-muted-foreground">
+              <p className="text-neutral-900">
                 We begin by understanding your business objectives, data landscape, and technical requirements.
               </p>
             </div>
@@ -287,7 +287,7 @@ export default function ServicesPage() {
                 <span className="text-lg font-bold text-primary">2</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Analysis</h3>
-              <p className="text-muted-foreground">
+              <p className="text-neutral-900">
                 We analyze your data, identify patterns, and develop initial models and prototypes.
               </p>
             </div>
@@ -298,7 +298,7 @@ export default function ServicesPage() {
                 <span className="text-lg font-bold text-primary">3</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Implementation</h3>
-              <p className="text-muted-foreground">
+              <p className="text-neutral-900">
                 We develop and deploy the solution, integrating it with your existing systems and workflows.
               </p>
             </div>
@@ -309,7 +309,7 @@ export default function ServicesPage() {
                 <span className="text-lg font-bold text-primary">4</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Optimization</h3>
-              <p className="text-muted-foreground">
+              <p className="text-neutral-900">
                 We continuously monitor, evaluate, and refine the solution to ensure optimal performance.
               </p>
             </div>
@@ -321,8 +321,8 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="container px-4 sm:px-8 mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Technologies We Use</h2>
-            <p className="text-xl text-muted-foreground">
+            <h2 className="text-3xl md:font-heading text-4xl font-bold mb-4">Technologies We Use</h2>
+            <p className="text-xl text-neutral-900">
               We leverage cutting-edge technologies and frameworks to deliver powerful data science and AI solutions.
             </p>
           </div>
@@ -330,8 +330,8 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {/* Technology logos would go here */}
             {Array.from({ length: 12 }).map((_, index) => (
-              <div key={index} className="flex items-center justify-center p-4 bg-zinc-50 rounded-lg h-24 border">
-                <div className="text-lg font-medium text-muted-foreground">Tech {index + 1}</div>
+              <div key={index} className="flex items-center justify-center p-4 bg-neutral-100 rounded-lg h-24 border">
+                <div className="text-lg font-medium text-neutral-900">Tech {index + 1}</div>
               </div>
             ))}
           </div>
@@ -342,8 +342,8 @@ export default function ServicesPage() {
       <section className="py-20 bg-gradient-to-b from-zinc-50 to-white">
         <div className="container px-4 sm:px-8 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h2 className="text-3xl md:font-heading text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <p className="text-xl text-neutral-900 mb-8">
               Schedule a free consultation to discuss your data science and AI needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

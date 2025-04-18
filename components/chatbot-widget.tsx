@@ -96,7 +96,7 @@ export default function ChatbotWidget() {
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="font-medium">Asistente IA</h3>
-                <p className="text-xs text-muted-foreground">Impulsado por DeepSeek</p>
+                <p className="text-xs text-neutral-900">Impulsado por DeepSeek</p>
               </div>
               <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsOpen(false)}>
                 <X className="h-4 w-4" />

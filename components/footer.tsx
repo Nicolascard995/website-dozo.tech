@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/" className="text-xl font-bold">
               NC
             </Link>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-neutral-900">
               Transformando negocios a través de soluciones de ciencia de datos e IA.
             </p>
             <div className="flex mt-4 space-x-3">
@@ -37,22 +37,22 @@ export default function Footer() {
             <h3 className="text-sm font-medium mb-4">Servicios</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/ai-solutions" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services/ai-solutions" className="text-neutral-900 hover:text-foreground">
                   Soluciones de IA
                 </Link>
               </li>
               <li>
-                <Link href="/services/data-analytics" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services/data-analytics" className="text-neutral-900 hover:text-foreground">
                   Análisis de Datos
                 </Link>
               </li>
               <li>
-                <Link href="/services/consultancy" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services/consultancy" className="text-neutral-900 hover:text-foreground">
                   Consultoría de IA
                 </Link>
               </li>
               <li>
-                <Link href="/services/training" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services/training" className="text-neutral-900 hover:text-foreground">
                   Capacitación y Talleres
                 </Link>
               </li>
@@ -62,22 +62,22 @@ export default function Footer() {
             <h3 className="text-sm font-medium mb-4">Recursos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-foreground">
+                <Link href="/blog" className="text-neutral-900 hover:text-foreground">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/resources/case-studies" className="text-muted-foreground hover:text-foreground">
+                <Link href="/resources/case-studies" className="text-neutral-900 hover:text-foreground">
                   Casos de Estudio
                 </Link>
               </li>
               <li>
-                <Link href="/resources/guides" className="text-muted-foreground hover:text-foreground">
+                <Link href="/resources/guides" className="text-neutral-900 hover:text-foreground">
                   Guías
                 </Link>
               </li>
               <li>
-                <Link href="/resources/webinars" className="text-muted-foreground hover:text-foreground">
+                <Link href="/resources/webinars" className="text-neutral-900 hover:text-foreground">
                   Webinars
                 </Link>
               </li>
@@ -91,12 +91,12 @@ export default function Footer() {
                 Suscribirse
               </Button>
             </div>
-            <p className="mt-2 text-xs text-muted-foreground">
+            <p className="mt-2 text-xs text-neutral-900">
               Recibe los últimos insights sobre IA y ciencia de datos en tu bandeja de entrada.
             </p>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-12 pt-6 border-t text-center text-sm text-neutral-900">
           <p>© {new Date().getFullYear()} Nicolás Cardozo. Todos los derechos reservados.</p>
           <div className="mt-1 flex justify-center space-x-4">
             <Link href="/privacy-policy" className="hover:text-foreground">
