@@ -1,46 +1,58 @@
-"use client"
+'use client';
 
-import * as React from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Download, Check, Loader2 } from 'lucide-react'
-import { submitLeadMagnetForm } from "@/actions/lead-magnet"
-import { useFormState } from "react-dom" // Cambiado de useActionState a useFormState
+import * as React from 'react';
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Download, Check, Loader2 } from 'lucide-react';
+import { submitLeadMagnetForm } from '@/actions/lead-magnet';
+import { useFormState } from 'react-dom'; // Cambiado de useActionState a useFormState
 
 interface LeadMagnetFormProps {
-  title?: string
-  description?: string
-  buttonText?: string
+  title?: string;
+  description?: string;
+  buttonText?: string;
 }
 
 const initialState = {
   success: false,
-  message: "",
-}
+  message: '',
+};
 
 export default function LeadMagnetForm({
-  title = "Obtén Tu Guía de IA Gratis",
+  title = 'Obtén Tu Guía de IA Gratis',
   description = "Descarga '5 Aplicaciones de IA para Transformar tu Negocio' - nuestra guía completa para implementar IA en tu organización.",
-  buttonText = "Descargar Guía",
+  buttonText = 'Descargar Guía',
 }: LeadMagnetFormProps) {
-  const [state, formAction] = useFormState(submitLeadMagnetForm, initialState) // Cambiado a useFormState
-  const [isPending, setIsPending] = React.useState(false)
-  const formRef = React.useRef<HTMLFormElement>(null)
+  const [state, formAction] = useFormState(submitLeadMagnetForm, initialState); // Cambiado a useFormState
+  const [isPending, setIsPending] = React.useState(false);
+  const formRef = React.useRef<HTMLFormElement>(null);
 
   // Reset form after successful submission
   React.useEffect(() => {
     if (state.success && formRef.current) {
-      formRef.current.reset()
-      setIsPending(false)
+      formRef.current.reset();
+      setIsPending(false);
     }
-  }, [state.success])
+  }, [state.success]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    setIsPending(true)
-  }
+    setIsPending(true);
+  };
 
   return (
     <Card className="w-full border-0 shadow-none">
@@ -62,14 +74,25 @@ export default function LeadMagnetForm({
             </Button>
           </div>
         ) : (
-          <form ref={formRef} action={formAction} onSubmit={handleSubmit} className="space-y-4">
+          <form
+            ref={formRef}
+            action={formAction}
+            onSubmit={handleSubmit}
+            className="space-y-4"
+          >
             <div className="space-y-2">
               <Label htmlFor="name">Nombre Completo</Label>
               <Input id="name" name="name" placeholder="Juan Pérez" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Correo Electrónico</Label>
-              <Input id="email" name="email" type="email" placeholder="juan@ejemplo.com" required />
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="juan@ejemplo.com"
+                required
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="industry">Industria</Label>
@@ -102,8 +125,11 @@ export default function LeadMagnetForm({
               )}
             </Button>
             <p className="text-xs text-center text-neutral-900">
-              Al enviar, aceptas nuestra{" "}
-              <a href="/privacy-policy" className="underline hover:text-foreground">
+              Al enviar, aceptas nuestra{' '}
+              <a
+                href="/privacy-policy"
+                className="underline hover:text-foreground"
+              >
                 Política de Privacidad
               </a>
             </p>
@@ -111,5 +137,5 @@ export default function LeadMagnetForm({
         )}
       </CardContent>
     </Card>
-  )
+  );
 }

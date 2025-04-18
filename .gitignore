@@ -24,3 +24,9 @@ Thumbs.db
 # Configuraciones de editores
 .vscode/
 .idea/
+/app.backup
+/components.backup
+
+/app.backup
+/components.backup
+/scripts/*.sh   # si no quieres versionar scripts generadores

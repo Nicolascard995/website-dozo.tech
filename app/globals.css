@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,16 +14,26 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 1E 88% E5%;           /* #1E88E5 en HSL aproximado */
+
+    /* HSL corregido de #1E88E5 */
+    --primary: 214 83% 46.5%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 43 A0% 47%;          /* #43A047 */
+
+    /* HSL corregido de #43A047 */
+    --secondary: 124 34% 47%;
     --secondary-foreground: 0 0% 98%;
-    --accent: FB 8C% 00%;             /* #FB8C00 */
+
+    /* HSL corregido de #FB8C00 */
+    --accent: 36 100% 49%;
     --accent-foreground: 0 0% 98%;
-    --muted: FA FA% FA%;              /* #FAFAFA */
+
+    /* HSL corregido de #FAFAFA */
+    --muted: 0 0% 98.4%;
     --muted-foreground: 240 3.8% 46.1%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
+
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
@@ -38,16 +48,22 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
+
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
+
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
@@ -61,17 +77,19 @@
   /* Tipografía base y colores */
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 
   /* Encabezados con Poppins */
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   /* Monoespaciado para código */
   code, pre {
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
   }
 }
